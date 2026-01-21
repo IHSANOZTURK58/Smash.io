@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+console.log("MODULE: useGame.ts loaded");
 import { usePeer } from '../network/PeerContext';
 import { nodes } from './Board';
 
