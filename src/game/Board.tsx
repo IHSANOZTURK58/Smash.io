@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+console.log("MODULE: Board.tsx loaded");
 import { Vector3, CatmullRomCurve3 } from 'three';
 import { Text, Extrude, Sphere } from '@react-three/drei';
 
