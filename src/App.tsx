@@ -25,8 +25,10 @@ const Lobby = () => {
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-2">
               <span className="text-xs font-bold text-gray-400 uppercase">My ID</span>
-              <code className="bg-black/50 px-2 py-1 rounded text-cyan-400 font-mono text-sm border border-cyan-500/30">{peerId}</code>
-              <button onClick={() => navigator.clipboard.writeText(peerId)} className="text-xs hover:text-white text-gray-400">COPY</button>
+              <code className="bg-black/50 px-2 py-1 rounded text-cyan-400 font-mono text-sm border border-cyan-500/30">
+                {peerId || "Connecting..."}
+              </code>
+              {peerId && <button onClick={() => navigator.clipboard.writeText(peerId)} className="text-xs hover:text-white text-gray-400">COPY</button>}
             </div>
 
             <div className="flex gap-2 items-center mt-2">
